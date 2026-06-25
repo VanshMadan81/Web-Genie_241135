@@ -1,6 +1,5 @@
 # Web Genie
 
-#### Official repository of ICG Summer Project '25 - Web Genie
 
 _Project Objective:_ A project based on Generative AI, specifically LLM's and their application in Web Development. Get a thorough understanding of the Web Development domain before leveraging AI to build dynamic components for the user.
 
