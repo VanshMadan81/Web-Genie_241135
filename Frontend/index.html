@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg" href="/techbot.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/tailwind.output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+    <title>Webini</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.development.js"></script>
+    <script>
+      // Ensure react-router-dom is available as expected global variable
+      if (typeof window.ReactRouterDOM === 'undefined') {
+        console.warn('ReactRouterDOM not found, creating fallback');
+        window.ReactRouterDOM = {
+          BrowserRouter: window.ReactRouter?.BrowserRouter || (() => null),
+          Routes: window.ReactRouter?.Routes || (() => null),
+          Route: window.ReactRouter?.Route || (() => null),
+          Link: window.ReactRouter?.Link || (() => null),
+          useNavigate: window.ReactRouter?.useNavigate || (() => null)
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

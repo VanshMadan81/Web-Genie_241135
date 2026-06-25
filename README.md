@@ -1,29 +1,35 @@
-# Web-Genie
+# Web Genie
 
-Official repository of ICG Summer Project '25 - Web Genie
+#### Official repository of ICG Summer Project '25 - Web Genie
 
-_Project Objective:_ A project based on Generative AI, specifically LLM's and their application in Web Development. Get a thorough understanding of the Web Development domain before leveraging AI to build dynamic components for the client.
+_Project Objective:_ A project based on Generative AI, specifically LLM's and their application in Web Development. Get a thorough understanding of the Web Development domain before leveraging AI to build dynamic components for the user.
 
-_Conduction:_ There will be two modules running parallelly, AI and WebDev, note that both are compulsory for ratification.
+_Conduction:_ For more details visit Conduction branch on same repository
 
-## Week 0 Resources
+__End Deliverable:__ A website with an inbuilt AI capable of creating and manipulating components within the webpage as user demands. That is, a real-time continuous AI-generated webpage.
 
-| **AI** | **WebDev** |
-|-------------------------------|--------------------|
-| **1. Git**<br>i. [Simple Git Guide](https://rogerdudler.github.io/git-guide/)<br>ii. [First Contributions](https://github.com/firstcontributions/first-contributions) | **1. Web Basics** <br>[A glimpse into how the web works](https://www.youtube.com/watch?v=hJHvdBlSxug)|
-| **2. Transformer & LLM Foundations**<br>[A Rather Deep Dive into Deep Learning](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) | **2. DNS** <br>[DNS post series](https://howdns.works)|
-| **3. All you need for neural networks**<br>[Neural Network from Scratch](https://www.youtube.com/watch?v=w8yWXqWQYmU) | **3. Web Architecture** <br> [All of this happens behind just one click!](https://www.youtube.com/watch?v=xv0Be4QfkH0) |
+## Setup
 
+Open terminal 1
+```
+cd Frontend
+npm i 
+npm run dev
+```
 
-## Week 1 Resources
+Open terminal 2
+```
+cd Backend
+source genie-venv/bin/activate
+uvicorn main:app --port 3001 --reload
+```
 
-### LLM
+## Credits
 
-1. Thoery on fine tuning available under resourceDocs folder
-2. Codes updated in codes/ for sentiment analysis, LoRA and qLoRA fine-tuning. Go through them.
-3. Here's another from [kaggle](https://www.kaggle.com/code/aliabdin1/how-to-finetune-llms-with-lora)
+__Mentors__<br>
+Ameer Zaman<br>
+Manan Jindal<br>
+Naveen Godara<br>
+Yash Pandit
 
-### WEB
-
-1. Fireship videos in general, but heres ones you need to watch [HTML](https://youtu.be/ok-plXXHlWw?si=uebuu8yp3BGPB_l_), [CSS](https://youtu.be/OEV8gMkCHXQ?si=1RY9DLCLpYTb6UIk) and [Types of CSS](https://youtu.be/ouncVBiye_M?si=yc5IdWZ7ujtt3HYE)
-2. Build an entire multi-page site using just HTML and CSS from this [video](https://youtu.be/oYRda7UtuhA?si=6ASq01lNV5i2guFy)
+Thank you to all the mentees, hope all of you had a successful project :)
