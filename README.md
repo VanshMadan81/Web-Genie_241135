@@ -22,14 +22,4 @@ Open terminal 2
 cd Backend
 source genie-venv/bin/activate
 uvicorn main:app --port 3001 --reload
-```
-
-## Credits
-
-__Mentors__<br>
-Ameer Zaman<br>
-Manan Jindal<br>
-Naveen Godara<br>
-Yash Pandit
-
-Thank you to all the mentees, hope all of you had a successful project :)
+```s
